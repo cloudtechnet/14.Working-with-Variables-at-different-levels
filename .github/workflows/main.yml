@@ -13,7 +13,11 @@ jobs:
       BUILD_ENV: Production
     steps:
       - name: Show workflow variables
+        env:
+          TEMP_MESSAGE: "Hello from this Step level Variable"
+        run: echo "$TEMP_MESSAGE"
         run: |
           echo "App name: $APP_NAME"
           echo "Node version: $NODE_VERSION"
           echo "Enviroment: $BUILD_ENV"
+          echo "$TEMP_MESSAGE"
