@@ -22,4 +22,4 @@ jobs:
           echo "Enviroment: $BUILD_ENV"
           echo "$TEMP_MESSAGE"
           echo "Repo Level Variable: ${{ vars.MY_REPO_VAR }}"
-          echo "app URL is ${{ vars.APP_URL }}"
+          echo "app URL is: ${{ vars.APP_URL }}"
